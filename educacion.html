@@ -13,90 +13,92 @@
   </head>
   <body>
     <body>
+      <header>
           <svg height="100" width="100" style="border:10px solid black;">
             <image xlink:href="img/Logo.svg" width="100px" height="100px" x="2px" y="2px" ></image>
           </svg>
-
+        </header>
 
         <h1>Hoja de Vida</h1>
-        <p> <h2>Nombres y Apellidos: Elvi Renee Bazalar Ganoza</h2></p>
-        <p><h3>Feha y lugar de nacimiento: 26 de julio de 1979 - Huacho-Lima-Peru</h3></p>
-         <ol>
-           <li><a href="index.html">INICIO</a>  </li>
-           <li><a href="educacion.html">EDUCACIÓN</a>  </li>
-           <li> <a href="Experiencia.html">EXPERIENCIA</a>   </li>
-         </ol>
-         <p> <h2>EDUCACIÓN</h2> </p>
+        <p> <h2>Nombres y Apellidos:  Elvi Renee Bazalar Ganoza </h2></p>
+        <p><h3>Feha y lugar de nacimiento: <strong>26 de julio de 1979</strong> - Huacho-Lima-Peru</h3></p>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="educacion.html">EDUCACIÓN</a>
+            <a href="Experiencia.html">EXPERIENCIA</a>
+          </nav>
+        <h2>EDUCACIÓN</h2>
+        <section>
+          <article>
+             <table id="tablaEducacion" border="1">
+                <thead>
+                  <tr>
+                    <th>Año</th>
+                    <th>Intitución</th>
+                    <th>Lugar</th>
+                    <th>?Culmino?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2019</td>
+                    <td>Institución 1</td>
+                    <td>Huacho</td>
+                    <td>SI</td>
+                  </tr>
+                  <tr>
+                    <td>2018</td>
+                    <td>Institución 2</td>
+                    <td>Huacho</td>
+                    <td>SI</td>
+                  </tr>
+                  <tr>
+                    <td>2017</td>
+                    <td>Institución 3</td>
+                    <td>Huacho</td>
+                    <td>SI</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
 
-         <table border="2">
-           <thead>
-             <tr>
-               <th>Año</th>
-               <th>Intitución</th>
-               <th>Lugar</th>
-               <th>?Culmino?</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>2019</td>
-               <td>Institución 1</td>
-               <td>Huacho</td>
-               <td>SI</td>
-             </tr>
-             <tr>
-               <td>2018</td>
-               <td>Institución 2</td>
-               <td>Huacho</td>
-               <td>SI</td>
-             </tr>
-             <tr>
-               <td>2017</td>
-               <td>Institución 3</td>
-               <td>Huacho</td>
-               <td>SI</td>
-             </tr>
-           </tbody>
-         </table><br><br>
+         <br><br>
 
-         <form>
-           <fieldset>
-             <legend>Agregar Estudios</legend>
-             Año: <select>
-                  <option>2019</option>
-                  <option>2018</option>
-                  <option>2017</option>
-                  <option>2016</option>
-                  <option>2015</option>
-             </select><br>
+            <article>
+              <form>
+                <fieldset>
+                  <legend>Agregar Estudios</legend>
+                  Año: <select id="año">
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                      </select><br>
+
              <p>
              <label for="institucion">Intitución</label>
-             <input id="institucion" type="text" placeholder="Ingrese una Institución"  size="30px" required>
+              <input id="institucion" type="text" placeholder="Ingrese una Institución"  size="30px" required>
              </p>
              <p>
              <label for="Lugar">Lugar</label>
-             <input id="Lugar" type="text" placeholder="Ingrese un Lugar"  size="30px" required>
+             <textarea id="lugar" name="Lugar" rows="1" cols="26"></textarea><br><br>
+            <p style="color:#FF0000";> Los Radio Butoon no estan contemplado en la imagen ni en los concetos que solicita la evaluacion </p>
+              <input id="R1" type="radio" name="gender" value="male" checked> Male<br>
+               <input id="R2"type="radio" name="gender" value="female"> Female<br>
+               <input id="R3"type="radio" name="gender" value="other"> Other
              </p>
                <input type="submit" value="Enviar">
-
            </fieldset>
-
          </form><br>
+         </article>
+      </section>
 
-
-
-
-
-
-
-
-  <footer>
-  correo: Samaritano2607@hotmail.com <br>
-  cel: 981340872 <br>
-  facebook:
-  </footer>
-
+      <footer>
+      correo: <strong>Samaritano2607@hotmail.com </strong><br>
+      cel: <strong>981340872</strong> <br>
+      facebook:
+      </footer>
     </body>
-
   </body>
 </html>
